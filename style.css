@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#EAF4FF;
+    color:#0D1B2A;
+    line-height:1.7;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#6CABDD;
+    padding:20px 5%;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+#header{
+    display:flex;
+    align-items:center;
+    list-style:none;
+}
+
+#logo{
+    color:white;
+    font-size:2rem;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+#right{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+li.right{
+    margin-left:0;
+}
+
+li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    font-size:1.1rem;
+    transition:0.3s;
+}
+
+li a:hover{
+    color:#0D1B2A;
+}
+
+/* ABOUT */
+
+#about{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    padding:100px 10%;
+    background:linear-gradient(135deg,#0D1B2A,#1E3A8A);
+}
+
+.left{
+    flex:1;
+}
+
+.left img{
+    width:100%;
+    border-radius:20px;
+    border:2px solid #6CABDD;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.right{
+    flex:1;
+    color:white;
+}
+
+.right h2{
+    font-size:3rem;
+    color:#B8E3FF;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.right p{
+    font-size:1.1rem;
+}
+
+/* JOURNEY */
+
+#journey{
+    padding:100px 10%;
+    background:#EAF4FF;
+}
+
+#journey h2{
+    text-align:center;
+    font-size:3rem;
+    color:#1E3A8A;
+    margin-bottom:50px;
+}
+
+.journey{
+    list-style:none;
+}
+
+.journey li{
+    background:#6CABDD;
+    color:#0D1B2A;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.journey li:hover{
+    transform:translateY(-5px);
+    background:#7AB8E6;
+}
+
+.journey b{
+    color:#0D1B2A;
+    font-size:1.15rem;
+}
+
+/* TROPHIES */
+
+#trophies{
+    padding:100px 10%;
+    background:#F8FBFF;
+}
+
+#trophies h2{
+    text-align:center;
+    font-size:3rem;
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+#trophies p{
+    text-align:center;
+    font-size:1.1rem;
+    margin-bottom:60px;
+}
+
+.trophies,
+.awards{
+    width:45%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.awards{
+    margin-left:5%;
+}
+
+.trophies h3,
+.awards h3{
+    color:#1E3A8A;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.trophies ul,
+.awards ul{
+    list-style:none;
+}
+
+.trophies li,
+.awards li{
+    padding:15px 0;
+    border-bottom:1px solid #C8D9E8;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#0D1B2A;
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    #about{
+        flex-direction:column;
+    }
+
+    #right{
+        gap:20px;
+    }
+
+    .trophies,
+    .awards{
+        width:100%;
+        margin:0 0 40px 0;
+    }
+
+    #logo{
+        font-size:1.5rem;
+    }
+
+    .right h2,
+    #journey h2,
+    #trophies h2{
+        font-size:2.2rem;
+    }
+}
+
+
